@@ -1,0 +1,53 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins";
+  background-color: rgb(8, 0, 20);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: none;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 8rem;
+}
+nav ul li {
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 0.5rem;
+  color: white;
+}
+
+.cursor {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 3px solid white;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transform-origin: 100% 100%;
+  z-index: -2;
+  transition: all 0.2s ease;
+  transition-property: transform;
+}
+
+.cursor-grow {
+  transform: scale(2.2);
+  background-color: white;
+}
+
+.link-hovered {
+  color: rgb(115, 23, 253);
+}
